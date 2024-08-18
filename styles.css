@@ -36,7 +36,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 7.5rem;
+  margin: 2.15rem 0rem 0rem 7.5rem;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2.5rem;
@@ -136,11 +136,12 @@ ul li a:hover {
 }
 
 .about-me,
-.skills {
+.skills,
+.experience {
   display: flex;
   align-items: center;
   text-align: center;
-  width: 10.5rem;
+  width: auto;
   height: 2.5rem;
   padding: 0.75rem 1.5rem;
   border-radius: 1.5rem;
@@ -184,19 +185,21 @@ ul li a:hover {
   color: #4b5563;
 }
 
-.skills-wrapper {
+.skills-wrapper,
+.experience-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
 }
 
-.skills {
-  padding-left: 2.75rem;
+.skills,
+.experience {
   text-align: center;
 }
 
-.skills-wrapper p {
+.skills-wrapper p,
+.experience-wrapper p {
   font-size: 2.15rem;
   font-weight: 400;
   line-height: 2.5rem;
@@ -221,8 +224,55 @@ ul li a:hover {
   color: #4b5563;
 }
 
-.skill-box{
+.skill-box {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.experience-wrapper {
+  margin: 5.5rem 0rem;
+}
+.experience-wrapper p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #4B5563;
+}
+
+.experience-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.experience-card {
+  max-width: 83.9rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 5.5rem;
+  border-radius:1.15rem ;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2.5rem;
+}
+
+.experience-card h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  color: #111827;
+}
+
+.job-description {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.comma {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 1.5rem;
+  background-color: grey;
+  border-radius: 50%;
 }
